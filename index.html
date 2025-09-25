@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ify ❤️ Jisung</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* ================== CSS FOR DESIGN ================== */
+        :root {
+            --primary-color: #F8BBD0; /* Soft Pink */
+            --secondary-color: #EF9A9A; /* Coral */
+            --text-dark: #333;
+            --text-light: #fff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: #fce4ec;
+            color: var(--text-dark);
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* ROMANTIC HEADER SECTION */
+        .romantic-header {
+            background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--text-light);
+            padding: 80px 20px;
+            margin-bottom: 40px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .romantic-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .romantic-header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        /* MAIN CONTENT SECTION */
+        .content-section h2 {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .photo-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .photo-item {
+            width: 100%;
+            max-width: 300px; /* Lebar maksimal setiap item foto */
+            height: 350px; /* Tinggi tetap untuk setiap item foto */
+            border-radius: 15px;
+            overflow: hidden; /* Penting untuk memotong bagian gambar yang berlebih */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .photo-item:hover {
+            transform: scale(1.05);
+        }
+
+        .photo-item img {
+            width: 100%;  /* Gambar akan mengisi lebar penuh item */
+            height: 100%; /* Gambar akan mengisi tinggi penuh item */
+            object-fit: cover; /* Ini yang paling penting! Gambar akan di-zoom/potong agar pas */
+            display: block;
+        }
+
+        .photo-caption {
+            font-style: italic;
+            margin-top: 10px;
+            color: #666;
+        }
+
+        /* FOOTER */
+        .footer {
+            margin-top: 60px;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="romantic-header">
+        <h1>Ify & Jisung</h1>
+        <p>A Love Story That Will Never End</p>
+    </div>
+
+    <div class="container">
+        <div class="content-section">
+            <h2>Our Beautiful Moments</h2>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="images/ify.jpg" alt="Photo of Ify">
+                    <p class="photo-caption">Ify, my love ❤️</p>
+                </div>
+                <div class="photo-item">
+                    <img src="images/jisung.jpg" alt="Photo of Jisung">
+                    <p class="photo-caption">Jisung, my soulmate ✨</p>
+                </div>
+            </div>
+            
+            <p style="margin-top: 40px; font-size: 1.1rem; max-width: 600px; margin: 40px auto; line-height: 1.8;">
+                Every second with you is a beautiful adventure. I never thought I could find happiness this deep. You are the most beautiful melody in my life.
+            </p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>With love, from Jisung to Ify.</p>
+    </footer>
+
+</body>
+</html>
